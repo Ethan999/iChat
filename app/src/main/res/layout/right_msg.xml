@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/chat_time_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2012-09-01 18:30:20"
+        android:layout_alignParentRight="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/chat_time_rt"
+        >
+
+            <ImageView
+                android:id="@+id/visitor_right"
+                android:layout_alignParentRight="true"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@drawable/visitor"
+                android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/msg_from_visitor"
+            android:background="@drawable/right_msg_bg"
+            android:layout_toLeftOf="@+id/visitor_right"
+            android:minHeight="49dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
